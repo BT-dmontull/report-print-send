@@ -27,7 +27,7 @@ class TestReport(common.HttpCase):
             </t>""",
             }
         )
-        self.report_imd = self.env["ir.model.data"].create(
+        self.report_imd = self.env["ir.model.data"].sudo().create(
             {
                 "name": "test",
                 "module": "base_report_to_printer",
